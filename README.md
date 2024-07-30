@@ -1,3 +1,7 @@
+Es un proyecto en el cual se crea la infraestructura en AWS usando Terraform para crear las VPC,  EC2, S3, RDS, el grupo de seguridad. Esto con el fin de en EC2 poder ejecutar un código de web scraping y extraer los datos con respecto a la liga de futbol inglesa 2023-2024 y guardar dicha información en un S3.
+
+It is a project in which the infrastructure is created in AWS using Terraform to create the VPC, EC2, S3, RDS, the security group. This in order to be able to run a web scraping code in EC2 and extract data regarding the English soccer league 2023-2024 and save that information in an S3.
+
 ----------------------------------------------------------------------------------------------------------------------
 Correr el script de web scraping usando el cliente SSH
 
