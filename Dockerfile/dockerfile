@@ -1,0 +1,17 @@
+# Usa una imagen base que tenga Terraform instalado
+FROM hashicorp/terraform:latest
+
+# Instala Python y pip
+RUN apk add --no-cache python3 py3-pip
+
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copia el archivo requirements.txt al directorio de trabajo
+COPY requirements.txt .
+
+# Instala las librerías listadas en requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Comando por defecto para ejecutar Terraform
+CMD ["terraform", "init"]
